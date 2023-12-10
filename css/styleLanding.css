@@ -1,0 +1,353 @@
+@import url(fonts.css);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+body {
+    font-family: "cairoLight";
+    direction: rtl;
+    text-align: right;
+    color: black;
+}
+
+.container {
+    width: auto;
+    padding: 10px 50px;
+    margin: 10px 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .icon {
+    font-family: "cairoExtraBold";
+    font-size: 170%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    font-family: "cairoBold";
+}
+
+nav li {
+    margin: 0px 15px;
+}
+
+nav li:hover a {
+    color: rgb(117, 55, 216);
+}
+
+nav ul li.active {
+    position: relative;
+}
+
+nav ul li.active::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: -10px;
+    border-radius: 5px;
+    background-color: rgb(117, 55, 216);
+}
+
+nav ul li.active::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 40%;
+    border-radius: 50%;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 7px solid rgb(117, 55, 216);
+}
+
+.landing .btnsLanding .btnLandingStart,
+.navBtns .btnNav {
+    border: none;
+    border-radius: 25px;
+    font-family: "cairoBold";
+    padding: 3px 30px;
+}
+
+.navBtns .btnNav.loginBtn {
+    background-color: transparent;
+}
+
+.navBtns .btnNav.signupBtn {
+    color: white;
+    box-shadow: 0px 5px 10px 0px rgba(117, 55, 216, 0.2);
+    background-color: rgb(117, 55, 216);
+}
+
+.landing {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 70px;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: visible;
+}
+
+.landing::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    width: 0px;
+    height: 0px;
+    border-radius: 100%;
+    z-index: -10;
+    box-shadow:
+        0px 0px 200px 100px rgba(255, 214, 96, 0.4),
+        0px 0px 200px 100px rgba(255, 214, 96, 0.4);
+}
+
+.landing .image {
+    position: relative;
+    /* overflow: hidden; */
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 85%);
+    width: 90%;
+}
+
+.landing .image::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    height: 85%;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+    box-sizing: border-box;
+    background: linear-gradient(135deg, rgba(250, 176, 255, 1) 0%, rgba(255, 117, 245, 1) 0%, rgba(255, 201, 47, 1) 100%);
+    transform-origin: 100% 0;
+    /* box-shadow: inset 0 0 30px rgba(250, 176, 255, 1), inset 0 0 30px rgba(255, 117, 245, 1), inset 0 0 30px rgba(255, 201, 47, 1); */
+    z-index: -1;
+}
+
+.landing .image .iconPhotoLand {
+    position: absolute;
+    width: 40px;
+}
+
+.landing .image .iconPhotoLanding1 {
+    top: 120px;
+    right: 60px;
+    transform: rotate(90deg);
+}
+
+.landing .image .iconPhotoLanding2 {
+    top: 220px;
+    left: 100px;
+    transform: rotate(20deg);
+}
+
+.landing .image .iconPhotoLanding3 {
+    top: 160px;
+    left: 230px;
+    transform: rotate(20deg);
+}
+
+.landing .image .iconPhotoLanding4 {
+    bottom: 130px;
+    left: 100px;
+    transform: rotate(-10deg);
+}
+
+.landing .image .iconPhotoLanding5 {
+    top: 240px;
+    right: 30px;
+    transform: rotate(-10deg);
+}
+
+.landing .image .iconPhotoLanding6 {
+    bottom: 70px;
+    right: 30px;
+    transform: rotate(-20deg);
+}
+
+.landing .image .iconPhotoLanding7 {
+    bottom: 100px;
+    left: 250px;
+    transform: rotate(-30deg);
+}
+
+.landing .image .iconPhotoLanding8 {
+    bottom: 240px;
+    left: 300px;
+    transform: rotate(-30deg);
+}
+
+.landing .image .iconPhotoLanding9 {
+    bottom: 200px;
+    left: 150px;
+    transform: rotate(10deg);
+}
+
+.landing .image .iconPhotoLanding10 {
+    top: 250px;
+    left: 200px;
+    transform: rotate(-30deg);
+}
+
+.landing .textLanding h1 {
+    position: relative;
+    width: max-content;
+}
+
+.landing .textLanding h1::before {
+    content: "";
+    position: absolute;
+    background: url("../imgs/idea.png") center/cover no-repeat;
+    transform: rotate(30deg);
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    right: -50px;
+}
+
+.landing .textLanding {
+    margin: auto;
+}
+
+.landing .btnsLanding,
+.landing .textLanding .paraLanding,
+.landing .textLanding h1 {
+    margin-bottom: 50px;
+}
+
+.landing .textLanding h1 .span1 {
+    position: relative;
+    font-family: "cairoBold";
+    z-index: -1;
+}
+
+.landing .textLanding h1 .span2 {
+    position: relative;
+    z-index: -1;
+}
+
+.landing .textLanding h1 .span2::before {
+    content: "";
+    position: absolute;
+    background: url("../imgs/push-pin.png") center/cover no-repeat;
+    transform: rotate(-70deg);
+    width: 20px;
+    height: 20px;
+    top: -20px;
+    left: 0px;
+}
+
+.landing .textLanding h1 .span1::before {
+    content: "";
+    position: absolute;
+    top: 52px;
+    right: -30px;
+    width: 120%;
+    height: 130px;
+    border: solid 3px #000;
+    border-color: rgb(117, 55, 216) transparent transparent transparent;
+    border-radius: 130%/100px 30px 0 0;
+}
+
+
+.landing .textLanding h1 .span1::after {
+    content: "";
+    position: absolute;
+    top: 57px;
+    right: 10px;
+    width: 80%;
+    height: 130px;
+    border: solid 3px #000;
+    border-color: rgb(117, 55, 216) transparent transparent transparent;
+    border-radius: 180%/100px 30px 0 0;
+}
+
+
+.landing img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+}
+
+.landing .btnsLanding .btnLand {
+    font-family: "cairoMedium";
+}
+
+.landing .btnsLanding .btnLandingStart {
+    background-color: rgb(255, 214, 96);
+    margin-left: 20px;
+}
+
+.landing .btnsLanding .btnlandingMore {
+    color: rgb(117, 55, 216);
+}
+
+.landing .btnsLanding .btnlandingMore i {
+    border: solid 4px;
+    padding: 6px 8px;
+    border-radius: 50%;
+}
+
+.textLanding .statistics {
+    display: flex;
+}
+
+.textLanding .statistics .state {
+    margin-left: 40px;
+}
+
+.textLanding .statistics .state h4 {
+    font-family: "cairoBold";
+    font-size: 140%;
+}
+
+header .countries {
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: visible;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 20px 50px;
+    box-shadow:
+        0px 8px 20px rgba(0, 0, 0, 0.1),
+        0px 16px 32px rgba(0, 0, 0, 0.1);
+    font-family: "cairoSemiBold";
+    font-size: 130%;
+}
+
+header .countries .country {
+    margin: 0px 20px;
+}
+
+header .countries::before {
+    content: "";
+    position: absolute;
+    content: "";
+    background: url("../imgs/shooting-star.png") center/cover no-repeat;
+    transform: rotate(10deg);
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    right: -20px;
+}

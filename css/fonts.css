@@ -1,0 +1,49 @@
+/* cairo */
+
+/* cairoBlack */
+@font-face {
+    src: url("./fonts/static/Cairo-Black.ttf");
+    font-family: "cairoBlack";
+}
+
+/* cairoBold */
+@font-face {
+    src: url("./fonts/static/Cairo-Bold.ttf");
+    font-family: "cairoBold";
+}
+
+/* cairoExtraBold */
+@font-face {
+    src: url("./fonts/static/Cairo-ExtraBold.ttf");
+    font-family: "cairoExtraBold";
+}
+
+/* cairoExtraLight */
+@font-face {
+    src: url("./fonts/static/Cairo-ExtraLight.ttf");
+    font-family: "cairoExtraLight";
+}
+
+/* cairoLight */
+@font-face {
+    src: url("./fonts/static/Cairo-Light.ttf");
+    font-family: "cairoLight";
+}
+
+/* cairoMedium */
+@font-face {
+    src: url("./fonts/static/Cairo-Medium.ttf");
+    font-family: "cairoMedium";
+}
+
+/* cairoRegular */
+@font-face {
+    src: url("./fonts/static/Cairo-Regular.ttf");
+    font-family: "cairoRegular";
+}
+
+/* cairoSemiBold */
+@font-face {
+    src: url("./fonts/static/Cairo-SemiBold.ttf");
+    font-family: "cairoSemiBold";
+}
