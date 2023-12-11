@@ -19,7 +19,8 @@ class Slider {
 
   goToSlide(slide) {
     this.slides.forEach((ele, i) => {
-      ele.style.transform = `translateX(${100 * (i - slide)}%)`;
+      const offset = 10; // Adjust the offset value as needed
+      ele.style.transform = `translateX(${(i - slide) * (100 + offset)}%)`;
     });
 
     this.btnRight.style.backgroundColor = "";
