@@ -1,0 +1,84 @@
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUs .aboutUsHeader {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 2rem;
+    font-family: "cairoBlack";
+    font-size: 200%;
+}
+
+.aboutUs .aboutUsText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.aboutUsComments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    column-gap: 40px;
+}
+
+.comment {
+    flex-basis: 1fr;
+    background-color: aqua;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.comment1 {
+    background-color: rgb(254, 247, 237);
+}
+
+.comment2 {
+    background-color: rgb(237, 249, 249);
+}
+
+.comment3 {
+    background-color: rgb(254, 239, 242);
+}
+
+.aboutUsQuickLook {
+    display: flex;
+}
+
+.aboutUsQuickLook img {
+    width: 60px;
+    margin-right: -15px;
+    border-radius: 50%;
+    border: 3px solid white;
+    transform: scaleX(-1);
+}
+
+.aboutUsQuickLook .countperson {
+    font-family: "cairoBold";
+    background-color: rgb(117, 55, 216);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    position: relative;
+}
+
+.aboutUsComments img.commentImage {
+    width: 20%;
+    border-radius: 50%;
+}

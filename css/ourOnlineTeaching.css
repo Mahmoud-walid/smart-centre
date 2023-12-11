@@ -1,9 +1,10 @@
 .ourOnlineTeaching {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 0px; */
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
     padding-top: 100px;
     padding-bottom: 100px;
 }
