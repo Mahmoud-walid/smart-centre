@@ -19,6 +19,10 @@ body {
     color: black;
 }
 
+ul {
+    list-style: none;
+}
+
 .container {
     width: auto;
     padding: 10px 50px;
@@ -146,7 +150,6 @@ nav .icon {
 }
 
 nav ul {
-    list-style: none;
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -186,6 +189,7 @@ nav ul li.active::after {
     border-bottom: 7px solid rgb(117, 55, 216);
 }
 
+.ourOnlineTeaching .ourOnlineTeachingText a.detailsBtn,
 .navBtnsMobile .btnNav,
 .landing .btnsLanding .btnLandingStart,
 .navBtns .btnNav {
@@ -398,7 +402,7 @@ nav ul li.active::after {
 }
 
 .landing .btnsLanding .btnLand {
-    font-family: "cairoMedium";
+    font-family: "cairoBold";
 }
 
 .landing .btnsLanding .btnLandingStart {
@@ -408,6 +412,7 @@ nav ul li.active::after {
 
 .landing .btnsLanding .btnlandingMore {
     color: rgb(117, 55, 216);
+    font-family: "cairoBold";
 }
 
 .landing .btnsLanding .btnlandingMore i {

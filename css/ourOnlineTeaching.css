@@ -1,0 +1,51 @@
+.ourOnlineTeaching {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.ourOnlineTeaching .ourOnlineTeachingText {}
+
+.ourOnlineTeaching .ourOnlineTeachingText ul {
+    margin-bottom: 40px;
+}
+
+.ourOnlineTeaching .ourOnlineTeachingText a.detailsBtn {
+    background-color: rgb(255, 214, 96);
+    font-family: "cairoBold";
+}
+
+.ourOnlineTeaching .ourOnlineTeachingText span {
+    color: rgb(117, 55, 216);
+}
+
+.ourOnlineTeaching .ourOnlineTeachingText h1 {
+    margin-bottom: 20px;
+    font-family: "cairoBlack";
+    font-size: 220%;
+}
+
+.ourOnlineTeaching .ourOnlineTeachingText ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: "cairoBold";
+}
+
+.ourOnlineTeaching .ourOnlineTeachingText ul li i {
+    margin-left: 20px;
+    padding: 7px 8px;
+    border-radius: 50%;
+    background-color: rgb(117, 55, 216);
+    color: white;
+}
+
+.ourOnlineTeaching .ourOnlineTeachingImage {}
+
+.ourOnlineTeaching .ourOnlineTeachingImage img {
+    width: 100%;
+}
