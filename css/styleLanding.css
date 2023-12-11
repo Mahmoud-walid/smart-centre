@@ -23,13 +23,122 @@ body {
     width: auto;
     padding: 10px 50px;
     margin: 10px 50px;
+    overflow: hidden;
 }
 
 nav {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+nav .mobileLinksNav {
+    position: absolute;
+    background-color: #d8d8d8;
+    /* top: -400px; */
+    top: 0px;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 20px;
+    display: none;
+    animation: navAnimateUpToDown 1s ease-in-out;
+}
+
+@keyframes navAnimateUpToDown {
+    from {
+        transform: translateY(-400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes navAnimateDownToUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-400px);
+        opacity: 0;
+    }
+}
+
+nav .mobileLinksNav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav .mobileLinksNav ul li.active {
+    position: relative;
+}
+
+nav .mobileLinksNav ul li.active::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 5px;
+    bottom: -10px;
+    border-radius: 5px;
+    background-color: rgb(117, 55, 216);
+}
+
+nav .mobileLinksNav ul li.active::after {
+    display: none;
+}
+
+nav .mobileLinksNav ul li {
+    /* margin-bottom: 10px; */
+    padding: 10px 0px;
+}
+
+nav .toggle {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 7px 10px 3px 10px;
+    margin-top: 2px;
+    text-decoration: none;
+    font-size: 17px;
+    z-index: 11;
+    display: none;
+}
+
+@media screen and (max-width: 1068px) {
+
+    nav .mobileLinksNav {
+        display: none;
+    }
+
+    nav .navBtns,
+    nav ul.linksNav {
+        display: none;
+    }
+
+    nav .toggle {
+        background: #d8d8d8;
+        float: right;
+        display: block;
+        padding: 16px 17px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .toggle:focus,
+    .toggle:hover {
+        border: 0;
+        outline: none;
+        background: #b3b3b3;
+    }
+}
+
 
 nav .icon {
     font-family: "cairoExtraBold";
@@ -77,6 +186,7 @@ nav ul li.active::after {
     border-bottom: 7px solid rgb(117, 55, 216);
 }
 
+.navBtnsMobile .btnNav,
 .landing .btnsLanding .btnLandingStart,
 .navBtns .btnNav {
     border: none;
@@ -85,10 +195,12 @@ nav ul li.active::after {
     padding: 3px 30px;
 }
 
+.navBtnsMobile .btnNav.loginBtn,
 .navBtns .btnNav.loginBtn {
     background-color: transparent;
 }
 
+.navBtnsMobile .btnNav.signupBtn,
 .navBtns .btnNav.signupBtn {
     color: white;
     box-shadow: 0px 5px 10px 0px rgba(117, 55, 216, 0.2);

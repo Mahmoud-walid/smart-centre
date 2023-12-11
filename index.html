@@ -15,17 +15,31 @@
     <header class="container">
       <nav>
         <h1 class="icon"><a href="#">سمارت سنتر</a></h1>
-        <ul>
+        <ul class="linksNav">
           <li class="active"><a href="#">من نحن</a></li>
           <li><a href="#">المعلمون</a></li>
           <li><a href="#">الكورسات</a></li>
           <li><a href="#">الاسعار</a></li>
           <li><a href="#">المدونة</a></li>
         </ul>
+        <div class="mobileLinksNav">
+          <ul>
+            <li class="active"><a href="#">من نحن</a></li>
+            <li><a href="#">المعلمون</a></li>
+            <li><a href="#">الكورسات</a></li>
+            <li><a href="#">الاسعار</a></li>
+            <li><a href="#">المدونة</a></li>
+          </ul>
+          <div class="navBtnsMobile">
+            <a href="#" class="btnNav signupBtn">اشترك الأن</a>
+            <a href="#" class="btnNav loginBtn">تسجيل</a>
+          </div>
+        </div>
         <div class="navBtns">
           <a href="#" class="btnNav signupBtn">اشترك الأن</a>
           <a href="#" class="btnNav loginBtn">تسجيل</a>
         </div>
+        <button onclick="clickToggle(this)" class="toggle"><i class="fa fa-bars"></i></button>
       </nav>
       <div class="landing">
         <div class="textLanding">
@@ -263,6 +277,7 @@
       <a class="allCoursesBtn" href="#">كل دوراتنا</a>
     </section>
   </div> <!-- Page -->
+  <script src="js/navBar.js"></script>
   <script src="js/starScript.js"></script>
   <script src="js/carouselScript.js"></script>
 </body>

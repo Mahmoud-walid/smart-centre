@@ -19,7 +19,8 @@
 /* SLIDER */
 .slider {
     position: relative;
-    max-width: 100rem;
+    left: 20px;
+    max-width: 180rem;
     height: 35rem;
     margin: auto;
     overflow: hidden;
@@ -31,7 +32,7 @@
 .slide {
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 90%;
     height: 40rem;
     display: flex;
     align-items: center;
@@ -41,8 +42,8 @@
     direction: ltr;
 }
 
-.slide .card3 {
-    margin-right: 40px;
+.slide--2 .card1 {
+    /* margin-left: 80px; */
 }
 
 .sliderBtn {
