@@ -1,9 +1,9 @@
 .aboutUs {
     display: flex;
     flex-direction: column;
-    /* gap: 20px; */
     justify-content: center;
     align-items: center;
+    padding-bottom: 5rem;
 }
 
 .aboutUs .aboutUsHeader {
@@ -30,6 +30,10 @@
     flex-wrap: nowrap;
     width: 100%;
     column-gap: 40px;
+}
+
+.aboutUsComments .commentName {
+    font-family: "cairoBold";
 }
 
 .comment {
