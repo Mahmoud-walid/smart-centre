@@ -1,0 +1,97 @@
+footer {
+    background: rgb(41, 9, 94);
+    background: linear-gradient(90deg, rgba(41, 9, 94, 1) 0%, rgba(116, 70, 195, 1) 100%);
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+footer,
+footer a {
+    color: white;
+    transition: 0.5s;
+}
+
+footer a:hover {
+    transition: 0s;
+    color: rgba(116, 70, 195, 1);
+}
+
+.footerUp .footerLinks .footerLink h4,
+.footerUp .footerLinks .footerLink a {
+    margin-bottom: 1rem;
+}
+
+.footerUp .footerLinks .footerLink h4 {
+    font-family: "cairoBold";
+}
+
+.footerUp {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 5rem;
+}
+
+.footerUp .footerLinks {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerUp .footerLinks .footerLink {
+    display: flex;
+    flex-direction: column;
+    margin-right: 9rem;
+}
+
+.footerUp .footerMail {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.footerUp .footerMail form {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.footerUp .footerMail input[type="email"] {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-family: "cairoMedium";
+    width: 19rem;
+    padding: 9px;
+    padding-right: 25px;
+}
+
+.footerUp .footerMail input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footerUp .footerMail button[type="submit"] {
+    background-color: white;
+    font-family: "cairoBold";
+    padding: 8px 19px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-right: -15px;
+    cursor: pointer;
+}
+
+.footerDown {
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0px;
+    margin: 0px 100px;
+}
+
+.footerDown a.icon {
+    font-family: "cairoExtraBold";
+    font-size: 170%;
+}
+
+.footerDown .socialMedia a {
+    margin-right: 2.5rem;
+}

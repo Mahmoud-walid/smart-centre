@@ -15,6 +15,22 @@
     font-size: 200%;
 }
 
+.aboutUs .aboutUsHeader .whatSay {
+    position: relative;
+}
+
+.aboutUs .aboutUsHeader .whatSay::before {
+    content: "";
+    position: absolute;
+    top: 52px;
+    right: -30px;
+    width: 200%;
+    height: 130px;
+    border: solid 5px #000;
+    border-color: rgb(117, 55, 216) transparent transparent transparent;
+    border-radius: 130%/100px 30px 0 0;
+}
+
 .aboutUs .aboutUsText {
     display: flex;
     flex-direction: column;
