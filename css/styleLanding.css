@@ -239,6 +239,13 @@ nav ul li.active::after {
     width: 100%;
 }
 
+.landing img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
 .landing .textLanding h1 {
     position: relative;
     width: max-content;
@@ -317,11 +324,6 @@ nav ul li.active::after {
 }
 
 
-.landing img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
 
 .landing .btnsLanding .btnLand {
     font-family: "cairoBold";
@@ -349,10 +351,12 @@ nav ul li.active::after {
 
 .textLanding .statistics {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .textLanding .statistics .state {
     margin-left: 40px;
+    text-align: center;
 }
 
 .textLanding .statistics .state h4 {
@@ -366,7 +370,7 @@ header .countries {
     margin: auto;
     margin-bottom: 50px;
     position: relative;
-    /* overflow: visible; */
+    max-width: 90%;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -508,21 +512,29 @@ header .countries::before {
         display: none;
     }
 
-    nav .mobileLinksNav {
-        display: block;
-    }
-
     .landing {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         grid-gap: 20px;
     }
 
+    .landing .image img {
+        width: 80%;
+    }
+
+    .landing .image {
+        width: 95%;
+    }
+
     .landing .textLanding h1 {
-        font-size: 1.6em;
+        font-size: 1.3em;
     }
 
     .countries {
         padding: 20px;
         /* font-size: 110%; */
+    }
+
+    .textLanding .statistics {
+        justify-content: center;
     }
 }
