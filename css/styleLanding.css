@@ -27,7 +27,7 @@ ul {
     width: auto;
     padding: 10px 50px;
     margin: 10px 50px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 nav {
@@ -236,15 +236,16 @@ nav ul li.active::after {
 }
 
 .landing .image {
-    position: relative;
-    /* overflow: hidden; */
-    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 85%);
     width: 100%;
 }
 
 .landing .textLanding h1 {
     position: relative;
     width: max-content;
+}
+
+.landing .textLanding p.paraLanding {
+    font-family: "cairoRegular";
 }
 
 .landing .textLanding h1::before {
@@ -317,7 +318,7 @@ nav ul li.active::after {
 
 
 .landing img {
-    max-width: 60%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
@@ -329,6 +330,10 @@ nav ul li.active::after {
 .landing .btnsLanding .btnLandingStart {
     background-color: rgb(255, 214, 96);
     margin-left: 20px;
+}
+
+.landing .btnsLanding .btnLandingStart:hover {
+    background-color: rgb(255, 196, 18);
 }
 
 .landing .btnsLanding .btnlandingMore {
@@ -357,10 +362,11 @@ nav ul li.active::after {
 
 header .countries {
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     margin-bottom: 50px;
     position: relative;
-    overflow: visible;
+    /* overflow: visible; */
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -371,7 +377,7 @@ header .countries {
         0px 8px 20px rgba(0, 0, 0, 0.1),
         0px 16px 32px rgba(0, 0, 0, 0.1);
     font-family: "cairoSemiBold";
-    font-size: 130%;
+    font-size: 120%;
 }
 
 header .countries .country {
@@ -388,4 +394,135 @@ header .countries::before {
     height: 100px;
     top: -20px;
     right: -20px;
+}
+
+@media screen and (min-width: 1536px) {
+    .container {
+        padding: 10px 100px;
+        margin: 10px auto;
+    }
+
+    nav .mobileLinksNav {
+        padding: 30px;
+    }
+
+    .landing {
+        grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+        grid-gap: 80px;
+    }
+
+    .landing .textLanding h1 {
+        font-size: 2.5em;
+    }
+}
+
+/* Large screens (≥1280px) */
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+    .container {
+        padding: 10px 80px;
+        margin: 10px auto;
+    }
+
+    nav .mobileLinksNav {
+        padding: 25px;
+    }
+
+    .landing {
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        grid-gap: 70px;
+    }
+
+    .landing .textLanding h1 {
+        font-size: 2.2em;
+    }
+}
+
+/* Medium screens (≥1024px) */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .container {
+        padding: 10px 60px;
+        margin: 10px auto;
+    }
+
+    nav .mobileLinksNav {
+        padding: 20px;
+    }
+
+    .landing {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-gap: 60px;
+    }
+
+    .landing .textLanding h1 {
+        font-size: 2em;
+    }
+}
+
+/* Small screens (≥768px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding: 10px 40px;
+        margin: 10px auto;
+    }
+
+    nav .mobileLinksNav {
+        padding: 15px;
+    }
+
+    nav .toggle {
+        padding: 12px 13px;
+    }
+
+    nav .landing {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 30px;
+    }
+
+    .landing .textLanding h1 {
+        font-size: 1.8em;
+    }
+
+    .countries {
+        padding: 20px 40px;
+        /* font-size: 120%; */
+    }
+}
+
+/* Mobile screens (<768px) */
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 10px 20px;
+        margin: 10px auto;
+    }
+
+    nav .mobileLinksNav {
+        padding: 10px;
+    }
+
+    nav .toggle {
+        padding: 16px 17px;
+    }
+
+    nav ul.linksNav,
+    nav .navBtns {
+        display: none;
+    }
+
+    nav .mobileLinksNav {
+        display: block;
+    }
+
+    .landing {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .landing .textLanding h1 {
+        font-size: 1.6em;
+    }
+
+    .countries {
+        padding: 20px;
+        /* font-size: 110%; */
+    }
 }
