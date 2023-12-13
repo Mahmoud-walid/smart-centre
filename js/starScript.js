@@ -30,13 +30,11 @@ const setStarColors = (slideNumber, cardNumber) => {
  */
 const numberSlidesAndCards = (numberSlides, numberCards) => {
   for (let s = 1; s <= numberSlides; s++) {
-    for (let c = 1; c <= numberCards; c++) {
-      console.log(s, c);
-      setStarColors(s, c);
-    }
+    console.log(s);
+    setStarColors(s, 1);
   }
 };
-numberSlidesAndCards(document.querySelectorAll(".slide").length, 3);
+numberSlidesAndCards(document.querySelectorAll(".slide").length);
 
 // price
 
