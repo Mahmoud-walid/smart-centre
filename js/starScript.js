@@ -23,20 +23,27 @@ const setStarColors = (slideNumber, cardNumber) => {
   }
 };
 
+// price
+const setPrice = (slideNumber, cardNumber) => {
+  const starName = `priceslide${slideNumber}card${cardNumber}`;
+  const priceElement = document.querySelector(`.${starName}`);
+  const ratingAttribute = priceElement.dataset[starName];
+  console.log(ratingAttribute);
+  priceElement.textContent = ratingAttribute ? `${ratingAttribute}L.E` : "free"
+};
+
 /**
  *
  * @param {Number of Slides} numberSlides
- * @param {Number of Cards in each slide} numberCards
  */
-const numberSlidesAndCards = (numberSlides, numberCards) => {
+const numberSlidesAndCards = (numberSlides) => {
   for (let s = 1; s <= numberSlides; s++) {
     console.log(s);
     setStarColors(s, 1);
+    setPrice(s, 1)
   }
 };
 numberSlidesAndCards(document.querySelectorAll(".slider .slide").length);
-
-// price
 
 // aboutSayCount
 (aboutSayCount = () => {
@@ -46,6 +53,10 @@ numberSlidesAndCards(document.querySelectorAll(".slider .slide").length);
 })();
 
 // starsComment
+/**
+ *
+ * @param {get cardNumber from numberCommentCard function} cardNumber
+ */
 const setStarComments = (cardNumber) => {
   const starName = `starscomment${cardNumber}`;
   const starsElement = document.querySelector(`.${starName}`);
@@ -65,6 +76,10 @@ const setStarComments = (cardNumber) => {
   }
 };
 
+/**
+ *
+ * @param {Number of Cards to Comments} numberCards
+ */
 const numberCommentCards = (numberCards) => {
   for (let c = 1; c <= numberCards; c++) {
     console.log(c);
