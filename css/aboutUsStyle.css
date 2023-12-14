@@ -40,12 +40,59 @@
 }
 
 .aboutUsComments {
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
-    flex-wrap: nowrap;
     width: 100%;
-    column-gap: 40px;
+    gap: 40px;
+}
+
+
+@media screen and (min-width: 1536px) {
+    .aboutUsComments {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
+/* Large screens (≥1280px) */
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+    .aboutUsComments {
+        /* display: flex;
+        flex-direction: row; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+/* Medium screens (≥1024px) */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .aboutUsComments {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);;
+    }
+
+}
+
+/* Small screens (≥768px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .aboutUsComments {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);;
+    }
+
+}
+
+/* Mobile screens (<768px) */
+@media screen and (max-width: 767px) {
+    .aboutUsComments {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);;
+    }
 }
 
 .aboutUsComments .commentName {
@@ -53,8 +100,6 @@
 }
 
 .comment {
-    flex-basis: 1fr;
-    background-color: aqua;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
