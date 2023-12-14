@@ -1,12 +1,14 @@
 .ourOnlineTeaching {
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; */
-    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: 1fr; */
+    /* grid-column-gap: 0px; */
+    /* grid-row-gap: 0px; */
+    /* grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); */
     padding-top: 100px;
     padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
 .ourOnlineTeaching .ourOnlineTeachingText {}
@@ -45,8 +47,66 @@
     color: white;
 }
 
-.ourOnlineTeaching .ourOnlineTeachingImage {}
+.ourOnlineTeaching .ourOnlineTeachingImage {
+    display: flex;
+    justify-content: center;
+}
 
 .ourOnlineTeaching .ourOnlineTeachingImage img {
-    width: 100%;
+    width: 50%;
+}
+
+@media screen and (min-width: 1536px) {
+    .ourOnlineTeaching .ourOnlineTeachingImage img {
+        width: 70%;
+    }
+}
+
+/* Large screens (≥1280px) */
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+    .ourOnlineTeaching .ourOnlineTeachingImage img {
+        width: 60%;
+    }
+
+}
+
+/* Medium screens (≥1024px) */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .ourOnlineTeaching .ourOnlineTeachingImage img {
+        width: 55%;
+    }
+
+}
+
+/* Small screens (≥768px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .ourOnlineTeaching .ourOnlineTeachingImage img {
+        width: 50%;
+    }
+
+    .ourOnlineTeaching {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ourOnlineTeaching .ourOnlineTeachingText h1 {
+        margin-bottom: 20px;
+        font-family: "cairoBlack";
+        font-size: 150%;
+    }
+
+}
+
+/* Mobile screens (<768px) */
+@media screen and (max-width: 767px) {
+    .ourOnlineTeaching {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ourOnlineTeaching .ourOnlineTeachingText h1 {
+        margin-bottom: 20px;
+        font-family: "cairoBlack";
+        font-size: 150%;
+    }
 }
