@@ -34,7 +34,7 @@ const numberSlidesAndCards = (numberSlides, numberCards) => {
     setStarColors(s, 1);
   }
 };
-numberSlidesAndCards(document.querySelectorAll(".slide").length);
+numberSlidesAndCards(document.querySelectorAll(".slider .slide").length);
 
 // price
 

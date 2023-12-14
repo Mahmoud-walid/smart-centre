@@ -5,6 +5,13 @@
     padding-bottom: 40px;
 }
 
+.Instructors {
+    background-color: rgb(248, 248, 248);
+    padding-bottom: 40px;
+    transition: transform 1s, opacity 1s;
+}
+
+.InstructorsHeader,
 .bestSellingHeader {
     display: flex;
     width: -webkit-fit-content;
@@ -12,11 +19,13 @@
     width: fit-content;
     margin: auto;
     font-family: "cairoBold";
-    font-size: 250%;
+    font-size: 210%;
     margin-bottom: 5rem;
+    text-align: center;
 }
 
 /* SLIDER */
+.slider2,
 .slider {
     position: relative;
     margin: auto;
@@ -67,8 +76,12 @@
     transform: translate(50%, -50%);
 }
 
+.sliderBtnRight.slick-disabled {
+    background-color: rgba(133, 133, 133, 0.7);
+}
+
 /* Cards */
-.card {
+.slider .card {
     /* position: relative; */
     background-color: #fff;
     border-radius: 10px;
@@ -76,6 +89,8 @@
     padding: 20px;
     width: 85%;
 }
+
+.slider2 .card {}
 
 .cardImage {
     width: 100%;
@@ -85,9 +100,22 @@
     border-radius: 10px;
 }
 
+.slider2 .cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider2 .cardContent h5.cardHeader {
+    font-size: 110%;
+}
+
+.slider2 .cardContent p {}
+
 .cardHeader {
     font-family: "cairoBold";
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     font-size: 75%;
 }
 
