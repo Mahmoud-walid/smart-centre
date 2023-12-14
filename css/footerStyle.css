@@ -27,6 +27,7 @@ footer a:hover {
 
 .footerUp {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: end;
     margin-bottom: 5rem;
@@ -35,12 +36,12 @@ footer a:hover {
 .footerUp .footerLinks {
     display: flex;
     flex-direction: row;
+    gap: 9rem;
 }
 
 .footerUp .footerLinks .footerLink {
     display: flex;
     flex-direction: column;
-    margin-right: 9rem;
 }
 
 .footerUp .footerMail {
@@ -94,4 +95,120 @@ footer a:hover {
 
 .footerDown .socialMedia a {
     margin-right: 2.5rem;
+}
+
+
+@media screen and (min-width: 1536px) {}
+
+/* Large screens (≥1280px) */
+@media screen and (min-width: 1280px) and (max-width: 1535px) {}
+
+/* Medium screens (≥1024px) */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .footerUp {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footerUp .footerLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 9rem;
+    }
+
+    .footerUp .footerLinks .footerLink {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0rem;
+    }
+
+    .footerUp .footerMail {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+
+}
+
+/* Small screens (≥768px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .footerUp {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footerUp .footerLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 9rem;
+    }
+
+    .footerUp .footerLinks .footerLink {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0rem;
+    }
+
+    .footerUp .footerMail {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+}
+
+/* Mobile screens (<768px) */
+@media screen and (max-width: 767px) {
+    .footerUp {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footerUp .footerLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .footerUp .footerLinks .footerLink {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0rem;
+    }
+
+    .footerUp .footerMail {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .footerDown {
+        border-top: 1px solid white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px 0px;
+        margin: 0px 100px;
+    }
+
+    .footerDown a.icon {
+        font-family: "cairoExtraBold";
+        font-size: 130%;
+    }
+
+    .footerDown .socialMedia a {
+        margin-right: 1rem;
+    }
+
 }
