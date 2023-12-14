@@ -219,6 +219,7 @@ nav ul li.active::after {
     padding: 20px;
     margin-bottom: 20px;
     overflow: visible;
+    align-items: center;
 }
 
 .landing::before {
@@ -301,7 +302,7 @@ nav ul li.active::after {
 .landing .textLanding h1 .span1::before {
     content: "";
     position: absolute;
-    top: 52px;
+    top: calc(52px + 10px);
     right: -30px;
     width: 120%;
     height: 130px;
@@ -314,7 +315,7 @@ nav ul li.active::after {
 .landing .textLanding h1 .span1::after {
     content: "";
     position: absolute;
-    top: 57px;
+    top: calc(57px + 10px);
     right: 10px;
     width: 80%;
     height: 130px;
@@ -460,6 +461,15 @@ header .countries::before {
     .landing .textLanding h1 {
         font-size: 2em;
     }
+
+    .landing .textLanding h1 .span1::before {
+        top: calc(52px + 0px);
+    }
+
+
+    .landing .textLanding h1 .span1::after {
+        top: calc(57px + 0px);
+    }
 }
 
 /* Small screens (≥768px) */
@@ -536,5 +546,20 @@ header .countries::before {
 
     .textLanding .statistics {
         justify-content: center;
+    }
+
+    .landing .textLanding h1 .span1::before {
+        top: calc(32px + 10px);
+        right: -10px;
+        width: 120%;
+        height: 130px;
+    }
+
+
+    .landing .textLanding h1 .span1::after {
+        top: calc(37px + 10px);
+        right: 10px;
+        width: 80%;
+        height: 130px;
     }
 }
