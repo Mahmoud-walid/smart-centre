@@ -6,7 +6,7 @@ const clickToggle = (() => {
     if (!clickedBtn) {
       clickedBtn = true;
       setTimeout(() => {
-        console.log("block");
+        // console.log("block");
         mobileLinksNav.style.display = "block";
         mobileLinksNav.style.animationName = "navAnimateUpToDown";
       }, 0);
@@ -14,7 +14,7 @@ const clickToggle = (() => {
       clickedBtn = false;
       mobileLinksNav.style.animationName = "navAnimateDownToUp";
       setTimeout(() => {
-        console.log("none");
+        // console.log("none");
         mobileLinksNav.style.display = "none";
       }, 1000);
     }

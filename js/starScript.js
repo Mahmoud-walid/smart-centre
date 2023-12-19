@@ -28,8 +28,8 @@ const setPrice = (slideNumber, cardNumber) => {
   const starName = `priceslide${slideNumber}card${cardNumber}`;
   const priceElement = document.querySelector(`.${starName}`);
   const ratingAttribute = priceElement.dataset[starName];
-  console.log(ratingAttribute);
-  priceElement.textContent = ratingAttribute ? `${ratingAttribute}L.E` : "free"
+  // console.log(ratingAttribute);
+  priceElement.textContent = ratingAttribute ? `${ratingAttribute}L.E` : "free";
 };
 
 /**
@@ -38,9 +38,9 @@ const setPrice = (slideNumber, cardNumber) => {
  */
 const numberSlidesAndCards = (numberSlides) => {
   for (let s = 1; s <= numberSlides; s++) {
-    console.log(s);
+    // console.log(s);
     setStarColors(s, 1);
-    setPrice(s, 1)
+    setPrice(s, 1);
   }
 };
 numberSlidesAndCards(document.querySelectorAll(".slider .slide").length);
@@ -82,7 +82,7 @@ const setStarComments = (cardNumber) => {
  */
 const numberCommentCards = (numberCards) => {
   for (let c = 1; c <= numberCards; c++) {
-    console.log(c);
+    // console.log(c);
     setStarComments(c);
   }
 };
